@@ -1,0 +1,7 @@
+- type: log
+  paths:
+    - /opt/SecureSpan/Gateway/node/default/var/logs/txlog.*.log
+  tags: ["TRANSACTION"]
+  fields: {log_type: transaction}
+  scan_frequency: 10s
+
